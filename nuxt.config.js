@@ -1,8 +1,8 @@
 import pkg from './package.json';
 
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  // Target: https://go.nuxtjs.dev/config-target  
+  ssr: false,
 
   server: {
     host: getHost(),
@@ -203,14 +203,14 @@ export default {
 
 };
 
-function getBasePath () {
+function getBasePath() {
   return process.env.npm_config_base || process.env.BASE_PATH || '/';
 }
 
-function getHost () {
+function getHost() {
   return process.env.npm_config_host || process.env.HOST || 'localhost';
 }
 
-function getPort () {
+function getPort() {
   return process.env.npm_config_port || process.env.PORT || 3000;
 }
