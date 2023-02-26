@@ -2,7 +2,7 @@ import pkg from './package.json';
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target  
-  ssr: false,
+  target: 'server',
 
   server: {
     host: getHost(),
